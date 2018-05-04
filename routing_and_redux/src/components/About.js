@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 
 export class About extends Component {
   render() {
-    console.log(this.props);
     return (
       <div>
-        <h2>About</h2>
+        <h1>About</h1>
       </div>
     )
   }

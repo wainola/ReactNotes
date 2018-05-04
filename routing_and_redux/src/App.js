@@ -4,8 +4,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Content from './components/Content/Content';
-import Login from './components/Login';
+import Content from './components/Content';
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
   render() {
@@ -13,7 +13,6 @@ class App extends Component {
       <div>
         <BrowserRouter >
           <Switch>
-            <Route exact path='/login' component={Login} />
             <Route path='/' component={Content}/>  
           </Switch>  
         </BrowserRouter> 
