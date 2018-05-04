@@ -323,6 +323,9 @@ export class Content extends Component {
     console.log('click');
     this.props.history.push('/contact');;
   }
+  GoToLogin(){
+    this.props.history.push('/login');
+  }
   render() {
     console.log(this.props);
     return (
@@ -330,6 +333,7 @@ export class Content extends Component {
         <h1>Content</h1>
         <p>Ruta activa: {this.props.location.pathname}</p>
         <button onClick={this.Click.bind(this)}>Nav Programatica</button>
+        <button onClick={this.GoToLogin.bind(this)}>Login</button>
         <div>
           <ul>
             <li>
